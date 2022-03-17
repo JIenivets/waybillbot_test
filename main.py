@@ -66,6 +66,11 @@ async def mailing(message: types.Message):
     await bot.send_message(settigs[1], 'Ваша заявка обратобана', reply_markup=await keybord_generetion(settigs[1]))
 
 
+@dp.message_handler(commands=['upd'])
+async def start(message: types.Message):
+    await message.answer(work_with_db.update_db(message.text))    
+
+
 @dp.message_handler(commands=['status'])
 async def status(message: types.Message):
     await message.answer(f"""===========  Статус  ===========\n
