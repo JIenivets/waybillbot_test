@@ -36,16 +36,17 @@ def addmileage(user_tg_id, mileage, type):
 
 
 def load_in_db(json):
-    # con, cur = db()
-    #
-    # cur.execute(f"""INSERT INTO {json["type"]} (number, tg_id, name, time, date, gos_number, city, count_mileage, check_out_time,
-    #                 technical_inspection_time, medical_examination_time)
-    #                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-    #             (json["number"], json["tg_id"], json["name"], json["time"], json["date"], f'{json["brand"]} {json["model"]} {json["gos_number"]}',
-    #              json["city"], json["count_mileage"], json["check_out_time"], json["technical_inspection_time"],
-    #              json["medical_examination_time"]))
-    # con.commit()
-    # preparationforloadinginGoogleSheets.display_new_row_in_googlesheelts(json)
+    if json["tg_id"] != "574802415":
+        con, cur = db()
+
+        cur.execute(f"""INSERT INTO {json["type"]} (number, tg_id, name, time, date, gos_number, city, count_mileage, check_out_time,
+                        technical_inspection_time, medical_examination_time)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                    (json["number"], json["tg_id"], json["name"], json["time"], json["date"], f'{json["brand"]} {json["model"]} {json["gos_number"]}',
+                     json["city"], json["count_mileage"], json["check_out_time"], json["technical_inspection_time"],
+                     json["medical_examination_time"]))
+        con.commit()
+    preparationforloadinginGoogleSheets.display_new_row_in_googlesheelts(json)
     forsaveindb.db_clear(json["tg_id"])
 
 
