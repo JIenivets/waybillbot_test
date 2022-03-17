@@ -1,0 +1,41 @@
+{
+  "empty_form": {
+    "range": "",
+    "majorDimension": "ROWS",
+    "values": [[]]
+  },
+  "justdisplay": {
+    "colums_name": [["number", "tg_id", "name", "time", "date", "gos_number", "city", "count_mileage", "check_out_time",
+                    "technical_inspection_time", "medical_examination_time"]],
+    "form": [{
+      "range": "\u0412\u044B\u0432\u043E\u0434 \u0431\u0430\u0437\u044B \u0434\u0430\u043D\u043D\u044B\u0445!A1:M",
+      "majorDimension": "COLUMNS",
+      "values": [[], [], [], [], [], [], [], [], [], [], []]
+    }]
+  },
+  "addnewrows": {
+    "1": {
+      "colums_name": ["number", "tg_id", "name", "time", "date", "car_fullname", "city", "count_mileage", "check_out_time",
+                    "technical_inspection_time", "medical_examination_time"],
+      "sheel_name": "\u0412\u044B\u0432\u043E\u0434 \u0431\u0430\u0437\u044B \u0434\u0430\u043D\u043D\u044B\u0445!",
+      "position": ["A", 1, ":M"]
+    },
+    "2": {
+      "colums_name": ["number", "date", "name", "tabel_number", "garage_number"],
+      "sheel_name": "\u0416\u0443\u0440\u043D\u0430\u043B \u043F\u0443\u0442\u0435\u0432\u044B\u0445 \u043B\u0438\u0441\u0442\u043E\u0432!",
+      "position": ["A", 4, ":F"]
+    },
+    "3": {
+      "colums_name": ["car_brandandmodel", "gos_number", "name", "controller", "datetextime",
+                    "count_mileage", "checked"],
+      "sheel_name": "\u0416\u0443\u0440\u043D\u0430\u043B \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442\u043E\u0432 \u043F\u0440\u0435\u0434\u0440\u0435\u0439\u0441\u043E\u0432\u043E\u0433\u043E \u043A\u043E\u043D\u0442\u0440!",
+      "position": ["A", 2, ":G"]
+    },
+    "4": {
+      "colums_name": ["number", "date", "brand", "gos_number", "medical_examination_time", "technical_inspection_time",
+                    "name", "city"],
+      "sheel_name": "\u0416\u0443\u0440\u043D\u0430\u043B \u043F\u0435\u0440\u0435\u0434\u0430\u0447\u0438 \u043C\u0435\u0434\u0438\u043A\u0443!",
+      "position": ["A", 1, ":I"]
+    }
+  }
+}
